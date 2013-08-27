@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+  
+    <filter>
+  <filter-name>LoginFilter</filter-name>
+  <filter-class>com.tengrun.tools.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>com.tengrun.servlet.Index</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.tengrun.servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Loginyz</servlet-name>
+    <servlet-class>com.tengrun.servlet.Loginyz</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminMain</servlet-name>
+    <servlet-class>com.tengrun.servlet.AdminMain</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUser</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserManager</servlet-name>
+    <servlet-class>com.tengrun.servlet.UserManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUser_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddUser_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>com.tengrun.servlet.DeleteUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateUser_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateUser_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProductType</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddProductType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProductType_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddProductType_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteProductType</servlet-name>
+    <servlet-class>com.tengrun.servlet.DeleteProductType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateProductType</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateProductType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateProductType_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateProductType_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductTypeManager</servlet-name>
+    <servlet-class>com.tengrun.servlet.ProductTypeManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProduct</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProduct_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.AddProduct_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteProduct</servlet-name>
+    <servlet-class>com.tengrun.servlet.DeleteProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateProduct</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateProduct_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.UpdateProduct_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductManager</servlet-name>
+    <servlet-class>com.tengrun.servlet.ProductManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadManager</servlet-name>
+    <servlet-class>com.tengrun.servlet.UploadManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Upload_do</servlet-name>
+    <servlet-class>com.tengrun.servlet.Upload_do</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteFile</servlet-name>
+    <servlet-class>com.tengrun.servlet.DeleteFile</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductDisplay</servlet-name>
+    <servlet-class>com.tengrun.servlet.ProductDisplay</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InfoDisplay</servlet-name>
+    <servlet-class>com.tengrun.servlet.InfoDisplay</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Introduction</servlet-name>
+    <servlet-class>com.tengrun.servlet.Introduction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Loginyz</servlet-name>
+    <url-pattern>/loginyz</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminMain</servlet-name>
+    <url-pattern>/admin/adminMain</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUser</servlet-name>
+    <url-pattern>/admin/AddUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserManager</servlet-name>
+    <url-pattern>/admin/UserManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUser_do</servlet-name>
+    <url-pattern>/admin/AddUser_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUser</servlet-name>
+    <url-pattern>/admin/DeleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/admin/UpdateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUser_do</servlet-name>
+    <url-pattern>/admin/UpdateUser_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductType</servlet-name>
+    <url-pattern>/admin/AddProductType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductType_do</servlet-name>
+    <url-pattern>/admin/AddProductType_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteProductType</servlet-name>
+    <url-pattern>/admin/DeleteProductType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProductType</servlet-name>
+    <url-pattern>/admin/UpdateProductType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProductType_do</servlet-name>
+    <url-pattern>/admin/UpdateProductType_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductTypeManager</servlet-name>
+    <url-pattern>/admin/ProductTypeManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProduct</servlet-name>
+    <url-pattern>/admin/AddProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProduct_do</servlet-name>
+    <url-pattern>/admin/AddProduct_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteProduct</servlet-name>
+    <url-pattern>/admin/DeleteProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProduct</servlet-name>
+    <url-pattern>/admin/UpdateProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProduct_do</servlet-name>
+    <url-pattern>/admin/UpdateProduct_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductManager</servlet-name>
+    <url-pattern>/admin/ProductManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadManager</servlet-name>
+    <url-pattern>/admin/UploadManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Upload_do</servlet-name>
+    <url-pattern>/admin/Upload_do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFile</servlet-name>
+    <url-pattern>/admin/DeleteFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductDisplay</servlet-name>
+    <url-pattern>/ProductDisplay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InfoDisplay</servlet-name>
+    <url-pattern>/InfoDisplay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Introduction</servlet-name>
+    <url-pattern>/introduction</url-pattern>
+  </servlet-mapping>
+
+  
+</web-app>

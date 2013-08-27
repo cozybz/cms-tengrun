@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+	outline:none;
+}
+body{
+	font:宋体 Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+#lefter{
+	width:228px;
+	background-color:#F2F2F2;
+	height:404px;
+}
+#lefter ul{
+	border:1px;
+	line-height:2em;
+}
+.bar1{
+	list-style:none;
+	display:block;
+	padding-left:80px;
+	background-image:url(./imageshtline2.jpg);
+	background-repeat:no-repeat;
+}
+.bar2{
+	list-style:none;
+	display:block;
+	background-color:#F2F2F2;
+	height:10px;
+}
+#lefter ul li a{
+	color:#FFF;
+	text-decoration:none;
+}
+#lefter ul span{
+	display:block;
+	width:227px;
+	height:15px;
+	background-image:url(./images/htline1.jpg);
+}
